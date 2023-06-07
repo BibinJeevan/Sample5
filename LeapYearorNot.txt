@@ -1,0 +1,9 @@
+echo "Enter the year:"
+read y
+ans=$(( y%4 ))
+if[ $ans -eq 0 ]
+then
+echo "Leap Year"
+else
+echo "not Leap"
+fi

@@ -1,0 +1,10 @@
+echo "Enter a no:"
+read n
+echo "Enter a range:"
+read m
+echo "Multiplication Table of $n is:"
+for((i=1;i<=$m;i++))
+do
+result=$[ $n*$i ]
+echo $n "*" $i=$result
+done

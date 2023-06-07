@@ -1,0 +1,9 @@
+echo "Enter a no:"
+read n
+while [ $n -gt 0 ]
+do
+r=$(( n%10 ))
+s=$(( s+r ))
+n=$(( n/10 ))
+done
+echo "Sum of Digits of the no is:$s"
