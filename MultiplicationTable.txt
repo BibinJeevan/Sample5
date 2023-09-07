@@ -6,5 +6,5 @@ echo "Multiplication Table of $n is:"
 for((i=1;i<=$m;i++))
 do
 result=$[ $n*$i ]
-echo $n "*" $i=$result
+echo $n "*" $i "=" $result
 done
