@@ -1,0 +1,9 @@
+echo "Enter a 7 digit no:"
+read num
+n=1
+while [ $n -le 7 ]
+do
+a = `echo $num/cat -c $n`
+echo $a
+n = $(( n+2 ))
+done

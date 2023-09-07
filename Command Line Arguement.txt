@@ -1,0 +1,9 @@
+if [ -d $1 ]
+ then
+  echo "The provide arguement is the directory"
+elif [ -f $1 ]
+ then
+  echo "The provided arguement is the file"
+else
+  echo "The given arguement does not exist on the file system"
+fi

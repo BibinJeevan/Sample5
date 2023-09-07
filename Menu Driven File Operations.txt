@@ -1,0 +1,57 @@
+ch=0
+while [ $ch -ne 9 ]
+do
+clear
+echo "1.Display current dir"
+echo "2.Listing the dir"
+echo "3.Make a dir"
+echo "4.Copy a file"
+echo "5.Rename file"
+echo "6.Delete file"
+echo "7.Edit File"
+echo "8.Open or display file"
+echo "9.Exit"
+echo "Enter Your Choice:"
+read ch
+case $ch in:
+1)echo "current dir is:"
+ pwd;;
+2)echo "directories are:"
+ ls;;
+3)echo "Enter dir name to create:"
+ read d
+ mkdir $d
+ echo $d "dir is created";;
+4)echo "Enter filename from copy:"
+ read f1
+ echo "Enter filename to be copied:"
+ read f2
+ cp $f1 $f2
+ echo $f2 "is copied from" $f1;;
+5)echo "Enter filename to rename:"
+ read f1
+ echo "Enter new name of file"
+ read f2
+ mv $f1 $f2
+ echo $f1 "is renamed as" $f2;;
+6)echo "Enter any file name to be deleted:"
+ read f1
+ rm $f1
+ echo $f1 "is deleted";; 
+7)echo "ENter any file to be editing"
+ read f1
+ vi $f1;;
+8)echo "Enter the file name you want to open:"
+ read f1
+ cat $f1;;
+9)echo "Have a nice time.."
+ exit;;
+*)echo "Invalid Choice Entered";;
+esac
+echo "Are you continue(1 for yes/0 for No):"
+read temp
+if [ $temp -eq 0 ]
+then
+ch=9
+fi
+done
