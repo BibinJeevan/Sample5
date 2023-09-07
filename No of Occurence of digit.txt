@@ -5,11 +5,11 @@ echo "Enter the digit whose occurence has to be found"
 read digit
 while [ $num -ne 0 ]
 do
- rem = $(( num%10 ))
+rem=$((num%10))
  if [ $rem -eq $digit ]
  then
-  c = $(( c+1 ))
+ c=$((c+1))
  fi
- num = $(( num/10 ))
+num=$((num/10))
 done
 echo "No:of Occurence of" $digit "is" $c "times"
