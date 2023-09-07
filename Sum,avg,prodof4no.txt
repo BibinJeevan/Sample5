@@ -6,9 +6,9 @@ echo "Enter the 3rd no:"
 read c
 echo "Enter the 4th no:"
 read d
-sum = $(( $a+$b+$c+$d ))
-avg = $(( $sum/4|bc-l ))
-prod = $(( $a*$b*$c*$d ))
+sum=$(( $a+$b+$c+$d ))
+avg=$(( $sum/4|bc-l ))
+prod=$(( $a*$b*$c*$d ))
 echo "The Sum of these no is:"$sum
 echo "The Avg of these no is:"$avg
 echo "The Prod of these no is:"$prod
