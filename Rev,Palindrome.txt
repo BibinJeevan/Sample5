@@ -1,10 +1,10 @@
 echo "Enter the String:"
 read s
-echo $s>temp
-rvs= "$(rev temp)"
-if[$s=$rvs]
+echo $s > temp
+rvs= "$( rev temp )"
+if [ $s = $rvs ]
 then
-echo"It is Palindrome"
+echo "It is Palindrome"
 else
-echo"It is not Palindrome"
+echo "It is not Palindrome"
 fi
