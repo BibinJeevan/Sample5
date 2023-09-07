@@ -13,7 +13,7 @@ echo "8.Open or display file"
 echo "9.Exit"
 echo "Enter Your Choice:"
 read ch
-case $ch in:
+case $ch in
 1)echo "current dir is:"
  pwd;;
 2)echo "directories are:"
