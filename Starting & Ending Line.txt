@@ -4,5 +4,5 @@ echo "Enter the starting line number:"
 read s
 echo "Enter the ending line number:"
 read n
-sed -n $s,$n/i $fname|cat>newline
+sed -n $s,$n\p $fname | cat > newline
 cat newline
