@@ -1,0 +1,43 @@
+add()
+{
+ echo "The sum of $n1 and $n2 is `expr $n1+$n2`"
+}
+sub()
+{
+ echo "The difference  of $n1 and $n2 is `expr $n1-$n2`"
+}
+prod()
+{
+ echo "The product of $n1 and $n2 is `expr $n1*$n2`"
+}
+quot()
+{
+ echo "The quotient of $n1 by $n2 is `expr $n1/$n2`"
+}
+rem()
+{
+ echo "The reminder of $n1 by $n2 is `expr $n1%$n2`"
+}
+input()
+{
+echo "Enter the 1st no:"
+read n1
+echo "Enter the 2nd no:"
+read n2
+}
+input
+echo "what do you want to do?(1 to 5)"
+echo ":1.Addition"
+echo ":2.Difference"
+echo ":3.Product"
+echo ":4.Quotient"
+echo ":5.Reminder"
+echo "Enter your choice:"
+read n
+case "$n" in
+1)add;;
+2)sub;;
+3)prod;;
+4)quot;;
+5)rem;;
+esac
