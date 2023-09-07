@@ -1,14 +1,14 @@
 echo "Enter the no:"
 read c
-x = $c
+x=$c
 sum=0
 r=0
 n=0
 while [ $x -gt 0 ]
 do
-r = $(( x%10 ))
-sum = $(( ( r*r*r ) + sum ))
-x = $(( x/10 ))
+r=$(($x%10))
+sum=$(((r*r*r)+sum))
+x=$((x/10))
 done
 if [ $sum -eq $c ]
 then
