@@ -12,17 +12,17 @@ echo "Employee name:$name"
 echo "Basic Salary:$bs"
 if [ $bs -gt 5000 ]
 then
-echo "HRA=$(( $bs *18/100 ))
+echo "HRA=$(($bs *18/100))
 else
 echo "HRA=550"
 fi
-da = $(( $bs * 35/100 ))
+da=$(($bs * 35/100))
 echo "DA=$da"
-pf = $(( $bs *13/100 ))
+pf=$(($bs *13/100 ))
 echo "PF=$pf"
-ta = $(($bs * 10/100 ))
+ta=$(($bs * 10/100))
 echo "TA=$ta"
-gs = $(( $bs+$hra+$ta+$da ))
-ns = $(( $gs - $pf ))
+gs=$(($bs+$hra+$ta+$da))
+ns=$(($gs - $pf))
 echo "Gross Salary=$gs"
 echo "Net Salary=$ns"
